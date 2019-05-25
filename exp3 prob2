@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+const int Province = 3;
+const int daysoftheWeek = 7;
+
+int main()
+{
+    int temp[Province][daysoftheWeek];
+    cout<<"Hello User, Thank You For Choosing This Program."
+    cout<<""<<endl;
+    cout << "Enter the temperatures for a week for the first province, second province, and third province."<<endl;
+    cout<<""<<endl;
+    for (int i = 0; i < Province; ++i)
+    {
+        for(int j = 0; j < daysoftheWeek; ++j)
+        {
+            cout << "Province " << i + 1 << ", Day " << j + 1 << " : ";
+            cin >> temp[i][j];
+        }
+    }
+    cout << "Here are the values you have inputed:"<<endl;
+    for (int i = 0; i < Province; ++i)
+    {
+        for(int j = 0; j < daysoftheWeek; ++j)
+        {
+            cout << "Province " << i + 1 << ", Day " << j + 1 << " = " << temp[i][j] << endl;
+        }
+    }
+cout<<""<<endl;
+cout<<""<<endl;   
+cout<<"                                                                     _"<<endl;
+cout<<"                                                                    | ) "<<endl;
+cout<<"                                                                   /  |___"<<endl;
+cout<<"                                                            ______/     _ _>"<<endl;
+cout<<"Thank You For Using This Program For Your Calculating Needs|            _ _>"<<endl;
+cout<<"                                                           |_______    _ _>"<<endl;
+cout<<"                                                                   \_____> "<<endl;
+    _getch();
+    return 0;
+}
