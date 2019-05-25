@@ -1,0 +1,61 @@
+#include <iostream> 
+#include <conio.h>
+using namespace std;
+
+ 
+ 
+int main()
+{
+
+const int numbers = 10;
+int integers[numbers];
+int count;
+cout<<" Hello User, This Program for your Calculating Needs :)"<<endl;
+cout<<""<<endl;
+cout << "Please enter 10 Numbers to Proceed :"<<endl;
+cout<<""<<endl;
+for (count = 0; count < numbers; count++)
+{
+cout << "Number " << (count + 1) << ": ";
+cin >> integers[count];
+}
+cout<<""<<endl;
+cout<<""<<endl;
+long double average;
+double total = 0;
+for (count = 0; count < numbers; count++)
+total += integers[count];
+{
+average = total / numbers;
+cout << "The average value of the numbers you have entered into the program is: " <<average<<endl;
+}
+cout<<""<<endl;
+cout<<""<<endl;
+long int highest;
+highest = integers[0];
+for (count = 0; count < numbers; count++)
+{
+if (integers[count] > highest)
+highest = integers[count];
+}
+cout << "The number with the highest value you entered is: " << highest <<endl;
+cout<<""<<endl;
+cout<<""<<endl;
+long int lowest = integers[0];
+for (count = 0; count < numbers; count++)
+{
+if (integers[count] < lowest)
+lowest = integers[count];
+}
+cout << "The number with the lowest value you entered is: " << lowest <<endl;
+cout<<""<<endl;
+cout<<"                                                                     _"<<endl;
+cout<<"                                                                    | ) "<<endl;
+cout<<"                                                                   /  |___"<<endl;
+cout<<"                                                            ______/     _ _>"<<endl;
+cout<<"Thank You For Using This Program For Your Calculating Needs|            _ _>"<<endl;
+cout<<"                                                           |_______    _ _>"<<endl;
+cout<<"                                                                   \_____> "<<endl;
+_getch();
+return 0;
+}
