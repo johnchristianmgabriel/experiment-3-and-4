@@ -1,0 +1,64 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main ()
+{
+	char a,b,c,d,e
+	int addition,subtraction,multiplication,division;
+	int x,y;
+	cout<<"Hello User, Thank You for Using This Program For Your Calculating Needs :)"<<endl;
+	cout<<""<<endl;
+	cout<<"Please Type In Your X Value to Proceed:";
+	cin>>x;
+	cout<<""<<endl;
+	cout<<""<<endl;
+	cout<<"Please Type In Your Y Value to Proceed:";
+	cin>>y;
+	cout<<""<<endl;
+	cout<<""<<endl;
+	cout<<"Now Please Choose From The Following Operations "<<endl;
+	cout<<""<<endl;
+	cout<<"a) for addition + "<<endl;
+	cout<<""<<endl;
+	cout<<"b) for subtraction -"<<endl;
+	cout<<""<<endl;
+	cout<<"c) for multiplication *"<<endl;
+	cout<<""<<endl;
+	cout<<"Enter Your Answer here:"<<endl;
+	cin>>a;
+	addition=x+y;
+	subtraction=x-y;
+	multiplication=x*y;
+	division=x/y;
+	switch (a)
+	{
+		case 'a':
+			cout<<"Here is the Answer to Your Question:"<<endl;
+			cout<<""<<endl;
+			cout<<x<<" + "<<y<<"="<<addition<<endl;
+		break;
+		case 'b':
+			cout<<"Here is the Answer to Your Question:"<<endl;
+			cout<<""<<endl;
+			cout<<x<<" - "<<y<<"="<<subtraction<<endl;
+		break;
+		case 'c':
+			cout<<"Here is the Answer to Your Question:"<<endl;
+			cout<<""<<endl;
+			cout<<x<<" * "<<y<<"="<<multiplication<<endl;
+		break;
+		case 'd':
+			cout<<"Here is the Answer to Your Question:"<<endl;
+			cout<<""<<endl;
+			cout<<x<<"/"<<y<<"="<<division<<endl;
+	}
+cout<<"                                                                     _"<<endl;
+cout<<"                                                                    | ) "<<endl;
+cout<<"                                                                   /  |___"<<endl;
+cout<<"                                                            ______/     _ _>"<<endl;
+cout<<"Thank You For Using This Program For Your Calculating Needs|            _ _>"<<endl;
+cout<<"                                                           |_______    _ _>"<<endl;
+cout<<"                                                                   \_____> "<<endl;
+	_getch();
+	return 0;
+}
