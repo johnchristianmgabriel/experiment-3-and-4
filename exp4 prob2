@@ -1,0 +1,62 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int size, arr[50], i,j,temp;
+	
+	cout << "Thank You for Choosing This Program User :)"
+	
+	cout << "This Program Illustrates Selection Sorting."<<endl;
+	cout<<""<<endl;
+	cout<<""<<endl;
+	cout << "Please Enter the size of your array : "<<endl;
+	cin >> size;
+	cout<<""<<endl;
+	cout<<""<<endl;
+	cout << "Please Enter the elements of your array : ";
+	cout<<""<<endl;
+	cout<<""<<endl;
+	for (i=0;i<size;i++)
+	{
+		cin >> arr[i];
+	}
+	
+	cout<<" Here is Your Data Before It is Sorted: "<<endl;
+	for(i=0;i<size;i++)
+		cout << arr[i] << " ";
+		cout<<""<<endl;
+		cout<<""<<endl;
+		
+	cout << " Your Data after implementing selection sorting to it"<<endl;
+	for (i=0;i<size;i++)
+	{
+		for (j=i+1;j<size;j++)
+		{
+			if(arr[i]>arr[j])
+			{
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+	cout<<""<<endl;
+	cout<<""<<endl;
+	cout << "Here is Your Sorted data User: "<<endl;
+	for (i=0;i<size;i++)
+	{
+		cout << arr[i] << " ";
+	}
+cout<<"                                                                     _"<<endl;
+cout<<"                                                                    | ) "<<endl;
+cout<<"                                                                   /  |___"<<endl;
+cout<<"                                                            ______/     _ _>"<<endl;
+cout<<"Thank You For Using This Program For Your Calculating Needs|            _ _>"<<endl;
+cout<<"                                                           |_______    _ _>"<<endl;
+cout<<"                                                                   \_____> "<<endl;
+	getch();
+	return 0;
+	
